@@ -159,3 +159,17 @@ const quotes = [
     author: "Viktor Frankl",
   },
 ];
+
+const button = document.querySelector("button");
+const blockQuote = document.querySelector(".quote");
+const cite = document.querySelector("cite");
+const index = Math.floor(Math.random() * quotes.length);
+
+const generateQuote = (e) => {
+  const index = Math.floor(Math.random() * quotes.length);
+  blockQuote.textContent = `"${quotes[index].quote}"`;
+  cite.textContent = quotes[index].author;
+};
+
+window.addEventListener("load", generateQuote);
+button.addEventListener("click", generateQuote);

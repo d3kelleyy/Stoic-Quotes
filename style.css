@@ -1,0 +1,27 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(images/Pantheon.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  font-family: "Cormorant SC", serif;
+}
+
+.blockquote {
+  font-size: 28px;
+}
+
+.blockquote-footer {
+  color: #fff;
+  font-size: 24px;
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 100px;
+}
